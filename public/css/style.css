@@ -1,0 +1,506 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 16px;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 16px;
+    background: rgb(218, 215, 215);
+}
+
+.dialog {
+    display: none;
+}
+
+@media screen and (max-width:1295px) {
+    *,
+    body {
+        font-size: 16px;
+    }
+}
+
+.error {
+    color: red;
+    display: inline;
+}
+
+.header {
+    width: calc(100% - 300px);
+    height: 50px;
+    background: red;
+    float: right;
+}
+
+.header button {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 100%;
+}
+
+.hd-menu {
+    height: 100%;
+    margin-left: 1rem;
+    float: left;
+    /* display: none; */
+}
+
+.hd-thongbao,
+.hd-nhanvien,
+.hd-giohang {
+    height: 100%;
+    position: relative;
+    left: 60%;
+    width: 10%;
+    float: left;
+}
+
+@media screen and (max-width:1295px) {
+    .header {
+        width: 100vw;
+    }
+}
+
+.header ul li {
+    float: left;
+}
+
+.menu {
+    min-height: 100vh;
+    width: 300px;
+    background: rgb(27, 14, 82);
+    float: left;
+    position: fixed;
+}
+
+.menu ul {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.menu ul li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 50px;
+    width: calc(100% - 10px);
+}
+
+.menu ul li:hover {
+    background: rgb(228, 228, 228);
+}
+
+.menu ul li:hover a span {
+    color: black;
+}
+
+.menu ul li:hover #btn-menu {
+    background: red;
+}
+
+.menu ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+.menu ul li a button {
+    width: 50px;
+    height: 100%;
+    float: left;
+    border: none;
+    background: none;
+}
+
+.menu ul li a button img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu ul li a span {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: calc(100% - 60px);
+    height: calc(100% - 10px);
+    font-size: 1.5rem;
+    display: block;
+    float: left;
+    color: white;
+}
+
+@media screen and (max-width:1295px) {
+    .menu {
+        display: none;
+        position: static;
+    }
+    .hd-menu {
+        display: block;
+    }
+}
+
+
+/*  */
+
+.content {
+    float: right;
+    height: calc(100vh - 50px);
+    width: calc(100% - 300px);
+    overflow: auto;
+}
+
+@media screen and (max-width:1295px) {
+    .content {
+        width: 100vw;
+    }
+}
+
+.title {
+    width: calc(98% - 20px);
+    padding-left: 20px;
+    margin-left: 1%;
+    height: 50px;
+    background: white;
+}
+
+.title h1 {
+    padding-top: 5px;
+    font-size: 2rem;
+    float: left;
+}
+
+.title a {
+    float: right;
+    display: block;
+    text-decoration: none;
+    margin-top: 5px;
+    height: 40px;
+    min-width: 100px;
+    margin-left: 5px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: #8f4be7;
+}
+
+.box {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: calc(98% - 40px);
+    padding: 20px 20px 20px 20px;
+    margin-left: 1%;
+    background: white;
+    border-radius: 10px;
+}
+
+.r {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 100px;
+}
+
+
+/* 
+.r-button {
+    margin-top: 10px;
+    width: 30%;
+    min-height: 50px;
+    margin-left: 70%;
+} */
+
+
+/* 
+.r-button button {
+    margin-top: 10px;
+    height: 40px;
+    min-width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+} */
+
+.add {
+    background: #8f4be7;
+}
+
+.save {
+    background: rgb(27, 83, 252);
+}
+
+.close {
+    background: rgb(88, 87, 87);
+}
+
+.title a:hover {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.c-2 {
+    margin-top: 10px;
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.c-1 {
+    margin-top: 10px;
+    width: 90%;
+    height: 100%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.r .c-1 textarea {
+    width: calc(100% - 40px);
+    margin-top: 2%;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 2.5rem;
+    border-radius: 10px;
+    border: solid rgb(0, 0, 0);
+}
+
+.r .c-2 label,
+.r .c-1 label {
+    font-size: 1.5rem;
+    display: block;
+}
+
+.r .c-1 input,
+.r .c-2 input {
+    width: calc(100% - 40px);
+    margin-top: 2%;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: solid rgb(0, 0, 0);
+}
+
+.r .c-2 select,
+.r .c-1 select {
+    border: solid rgb(0, 0, 0);
+    width: calc(100% - 40px);
+    margin-top: 2%;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 2.7rem;
+    border-radius: 10px;
+}
+
+.a-view,
+.a-edit,
+.a-delete {
+    display: block;
+    float: left;
+    height: 2rem;
+    padding-top: 0.5rem;
+    width: 3rem;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.a-view:hover,
+.a-edit:hover,
+.a-delete:hover {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.a-view {
+    background: #0cf55a;
+}
+
+.a-edit {
+    background: #1E90FF;
+}
+
+.a-delete {
+    background: rgb(255, 19, 19);
+}
+
+.delete {
+    background: rgb(248, 4, 4);
+    border: none;
+}
+
+
+/* home */
+
+.main {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 95%;
+    margin-left: 2.5%;
+    min-height: 300px;
+    border-radius: 20px;
+    background: white;
+}
+
+.home-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 250px;
+    margin-left: 2.5%;
+    border: 1px solid burlywood;
+    border-radius: 20px;
+}
+
+.item-4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 20%;
+    height: calc(100% - 10px);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background: lemonchiffon;
+    float: left;
+}
+
+.home-row button {
+    width: 100%;
+    height: 80%;
+    border: none;
+}
+
+.home-row button img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#showListhinhanh,
+#showhinhanh,
+#tamp {
+    width: 100%;
+    height: 100%;
+}
+
+#tamp-hinhanh {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 100px;
+    border: none;
+    margin-left: 10px;
+    display: block;
+}
+
+#tamp-hinhanh img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.tb-img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.tb-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+table th {
+    text-align: center;
+}
+
+input[type='radio'][name='size'] {
+    opacity: 0;
+    width: 0;
+}
+
+
+/* width */
+
+.w-23 {
+    width: 23%;
+}
+
+.w-24 {
+    width: 24%;
+}
+
+.h50px {
+    height: 50px;
+}
+
+.h200px {
+    height: 200px;
+}
+
+.h300px {
+    height: 300px;
+}
+
+.h400px {
+    height: 400px;
+}
+
+.h500px {
+    height: 500px;
+}
+
+.w50px {
+    width: 50px;
+}
+
+.w100px {
+    width: 100px;
+}
+
+.w120px {
+    width: 120px;
+}
+
+.w200px {
+    width: 200px;
+}
+
+.w250px {
+    width: 250px;
+}
+
+.w300px {
+    width: 300px;
+}
+
+.bg-white {
+    background: white;
+}
+
+.btn-delete {
+    position: absolute;
+    right: 5%;
+}
+
+
+/* background */
